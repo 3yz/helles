@@ -1,0 +1,8 @@
+Options +FollowSymLinks
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule ^packages/(.*)$ /3yz/2014/helles/public/packages/$1 [R=301,NC,L]
+RewriteRule ^ index.php [L]
