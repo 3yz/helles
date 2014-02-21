@@ -3,6 +3,23 @@
 	"description": "The Laravel Framework.",
 	"keywords": ["framework", "laravel"],
 	"license": "MIT",
+  "repositories": [
+    {
+      "type": "package",
+      "package": {
+        "name": "tresyz/helles-manager",
+        "version": "master",
+        "source": {
+          "url": "https://github.com/3yz/helles-manager",
+          "type": "git",
+          "reference": "master"
+        },
+        "autoload": {
+          "classmap": ["libs/"]
+        }
+      }
+    }
+  ],
 	"require": {
 		"laravel/framework": "4.1.*",
     "cartalyst/sentry": "2.1.*",
@@ -10,7 +27,8 @@
     "way/generators": "dev-master",
     "laravelbook/ardent": "dev-master",
     "barryvdh/laravel-debugbar": "dev-master",
-    "way/database": "dev-master"
+    "way/database": "dev-master",
+    "tresyz/helles-manager": "master"
 	},
 	"autoload": {
 		"classmap": [
@@ -18,8 +36,7 @@
 			"app/controllers",
 			"app/models",
 			"app/database/migrations",
-			"app/database/seeds",
-			"app/tests/TestCase.php"
+			"app/database/seeds"
 		]
 	},
 	"scripts": {
