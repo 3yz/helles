@@ -5,29 +5,12 @@
 	"license": "MIT",
   "repositories": [
     {
-      "type": "package",
-      "package": {
-        "name": "tresyz/helles-manager",
-        "version": "master",
-        "source": {
-          "url": "https://github.com/3yz/helles-manager",
-          "type": "git",
-          "reference": "master"
-        },
-        "autoload": {
-          "classmap": ["libs/"]
-        }
-      }
+      "type": "vcs",
+      "url": "https://github.com/3yz/helles-manager"
     }
   ],
 	"require": {
-		"laravel/framework": "4.1.*",
-    "cartalyst/sentry": "2.1.*",
-    "edvinaskrucas/notification": "2.*",
-    "way/generators": "dev-master",
-    "laravelbook/ardent": "dev-master",
-    "barryvdh/laravel-debugbar": "dev-master",
-    "way/database": "dev-master",
+		"laravel/framework": "4.1.*",    
     "tresyz/helles-manager": "master"
 	},
 	"autoload": {
@@ -55,5 +38,5 @@
 	"config": {
 		"preferred-install": "dist"
 	},
-	"minimum-stability": "dev"
+	"minimum-stability": "stable"
 }
