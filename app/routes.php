@@ -15,3 +15,8 @@ Route::get('/', function()
 {
 	return View::make('hello');
 });
+
+Route::group(array('prefix' => 'admin', 'before' => 'auth.admin'), function()
+{
+  include __DIR__.'/routesAdmin.php';
+});
