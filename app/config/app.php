@@ -110,7 +110,8 @@ return array(
     'Way\Generators\GeneratorsServiceProvider',
     'Krucas\Notification\NotificationServiceProvider',  
     'Barryvdh\Debugbar\ServiceProvider',
-    'Tresyz\HellesManager\HellesManagerServiceProvider'
+    'Tresyz\HellesManager\HellesManagerServiceProvider',
+    'MetalMatze\Html\HtmlServiceProvider'
 	),
 
 	/*

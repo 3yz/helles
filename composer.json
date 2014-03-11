@@ -11,7 +11,8 @@
   ],
 	"require": {
 		"laravel/framework": "4.1.*",    
-    "tresyz/helles-manager": "master"
+    "tresyz/helles-manager": "master",
+    "metalmatze/laravel-html-cachebusting": "dev-master"
 	},
 	"autoload": {
 		"classmap": [

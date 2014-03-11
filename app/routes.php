@@ -11,10 +11,14 @@
 |
 */
 
-Route::get('/', function()
-{
-	return View::make('hello');
-});
+// Route::get('/', function()
+// {
+// 	return View::make('hello');
+// });
+Route::get('/', array(
+  'as' => 'home', 
+  'uses' => 'HomeController@showIndex'
+));
 
 Route::group(array('prefix' => 'admin', 'before' => 'auth.admin'), function()
 {
