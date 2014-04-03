@@ -9,7 +9,7 @@ The basic bootstrap use a lot of packages to let you work on your project and st
 1. First of all you must clone the project repo: `git clone https://github.com/3yz/helles.git project_name`
 2. Go to the project folder and execute: `composer install` 
 3. Next, config the database in `app/config/database.php`
-4. Update the .htaccess to your relative server path 
+4. Update the lines 557 and 558 of the .htaccess to your relative server path 
 5. Execute the following commands: 
    - `./artisan migrate:install`
    - `./artisan migrate --package=cartalyst/sentry`

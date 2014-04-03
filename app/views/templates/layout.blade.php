@@ -12,8 +12,8 @@
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-        {{ HTML::style('public/css/main.css') }}
-        {{ HTML::script('public/js/vendor/modernizr-2.6.2.min.js') }}
+        {{ HTML::style('css/main.css') }}
+        {{ HTML::script('js/vendor/modernizr-2.6.2.min.js') }}
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -23,10 +23,10 @@
         @yield('content')
 
         {{ HTML::script('//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js') }}
-        <script>window.jQuery || document.write('<script src="public/js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src=""></script>
-        {{ HTML::script('public/js/plugins.js') }}
-        {{ HTML::script('public/js/main.js') }}
+        {{ HTML::script('js/plugins.js') }}
+        {{ HTML::script('js/main.js') }}
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
