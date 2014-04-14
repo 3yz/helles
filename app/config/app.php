@@ -109,7 +109,6 @@ return array(
     'Cartalyst\Sentry\SentryServiceProvider',
     'Way\Generators\GeneratorsServiceProvider',
     'Krucas\Notification\NotificationServiceProvider',  
-    'Barryvdh\Debugbar\ServiceProvider',
     'Tresyz\HellesManager\HellesManagerServiceProvider',
     'MetalMatze\Html\HtmlServiceProvider'
 	),
@@ -179,7 +178,6 @@ return array(
 		'View'            => 'Illuminate\Support\Facades\View',
     'Sentry'          => 'Cartalyst\Sentry\Facades\Laravel\Sentry',
     'Notification'    => 'Krucas\Notification\Facades\Notification',
-    'Debugbar'        => 'Barryvdh\Debugbar\Facade',
     'Model'           => 'Way\Database\Model'
 	),
 
