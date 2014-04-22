@@ -24,11 +24,22 @@ $app = new Illuminate\Foundation\Application;
 |
 */
 
-$env = $app->detectEnvironment(array(
-
-	'local' => array('your-machine-name'),
-
-));
+$env = $app->detectEnvironment(function()
+{ 
+  $domain = explode('.', $_SERVER['HTTP_HOST']);
+  switch($domain[0])
+  {
+    case 'localhost':
+    case 'localhost:8080':                
+    case 'dev':
+      return 'local';
+    case 'hml27':
+      return 'staging';
+    case 'site':
+    default:
+      return 'production';
+  }
+});
 
 /*
 |--------------------------------------------------------------------------
