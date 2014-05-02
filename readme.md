@@ -14,7 +14,7 @@ The basic bootstrap use a lot of packages to let you work on your project and st
    - `./artisan migrate:install`
    - `./artisan migrate --package=cartalyst/sentry`
    - `./artisan asset:publish tresyz/helles-manager`
-   - `./artisan db:seed`
+   - `./artisan db:seed --class=ManagerTableSeeder`
 
 ##Create a user
 In the terminal, run the following command:
