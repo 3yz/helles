@@ -109,8 +109,7 @@ return array(
     'Cartalyst\Sentry\SentryServiceProvider',
     'Way\Generators\GeneratorsServiceProvider',
     'Krucas\Notification\NotificationServiceProvider',  
-    'Tresyz\HellesManager\HellesManagerServiceProvider',
-    'MetalMatze\Html\HtmlServiceProvider'
+    'Tresyz\HellesManager\HellesManagerServiceProvider'
 	),
 
 	/*
