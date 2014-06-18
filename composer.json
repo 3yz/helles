@@ -11,7 +11,9 @@
   ],
 	"require": {
 		"laravel/framework": "4.1.*",    
-    "tresyz/helles-manager": "master"
+    "tresyz/helles-manager": "1.0.*",
+    "watson/active": "1.*",
+    "itsgoingd/clockwork": "1.*"
 	},
 	"autoload": {
 		"classmap": [

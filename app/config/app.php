@@ -109,7 +109,9 @@ return array(
     'Cartalyst\Sentry\SentryServiceProvider',
     'Way\Generators\GeneratorsServiceProvider',
     'Krucas\Notification\NotificationServiceProvider',  
-    'Tresyz\HellesManager\HellesManagerServiceProvider'
+    'Tresyz\HellesManager\HellesManagerServiceProvider',
+    'Watson\Active\ActiveServiceProvider',
+    'Clockwork\Support\Laravel\ClockworkServiceProvider'
 	),
 
 	/*
@@ -177,7 +179,9 @@ return array(
 		'View'            => 'Illuminate\Support\Facades\View',
     'Sentry'          => 'Cartalyst\Sentry\Facades\Laravel\Sentry',
     'Notification'    => 'Krucas\Notification\Facades\Notification',
-    'Model'           => 'Way\Database\Model'
+    'Model'           => 'Way\Database\Model',
+    'Active'          => 'Watson\Active\Facades\Active',
+    'Clockwork'       => 'Clockwork\Support\Laravel\Facade',
 	),
 
 );
