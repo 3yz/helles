@@ -31,24 +31,16 @@ module.exports = function(grunt) {
                 files: 'public/scss/{,*/}*.{scss,sass}',
                 tasks: ['compass:dev'],
                 options: {
-                  nospawn: true
+                  nospawn: true,
+                  livereload: true
                 }
-            },
-
-            livereload: {
-                options: {
-                    livereload: true,
-                },
-                
-                files: ['index.html', 'css/main.css']
-            }
+            },            
         }
     });
 
     grunt.loadNpmTasks('grunt-contrib-compass');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-imagemin');
-    grunt.loadNpmTasks('grunt-contrib-livereload');
 
     grunt.registerTask('default', ['watch']);
 };
