@@ -31,10 +31,15 @@ module.exports = function(grunt) {
                 files: 'public/scss/{,*/}*.{scss,sass}',
                 tasks: ['compass:dev'],
                 options: {
-                  nospawn: true,
+                  nospawn: true
+                }
+            },           
+            livereload: {
+                files: [ 'public/css/main.css', 'public/js/main.js' ],
+                options: {
                   livereload: true
                 }
-            },            
+            }
         }
     });
 
