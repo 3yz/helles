@@ -558,3 +558,6 @@ FileETag None
   RewriteRule ^(css|js|img|upload|fonts)/(.*)$ /path/to/project/public/$1/$2 [L]
   RewriteRule ^ index.php [L]
 </IfModule>
+
+# define the environment (local|testing|production)
+SetEnv LARAVEL_ENV local 
