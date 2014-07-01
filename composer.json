@@ -10,7 +10,7 @@
     }
   ],
 	"require": {
-		"laravel/framework": "4.1.*",    
+		"laravel/framework": "4.2.*",    
     "tresyz/helles-manager": "1.0.*",
     "watson/active": "1.*",
     "itsgoingd/clockwork": "1.*"

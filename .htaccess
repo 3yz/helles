@@ -555,6 +555,6 @@ FileETag None
   RewriteRule ^app($|/|/*|/.*) – [L,R=404]
 
   RewriteRule ^packages/(.*)$ /path/to/project/public/packages/$1 [L]
-  RewriteRule ^(css|js|imgs|uploads|fonts)/(.*)$ /path/to/project/public/$1/$2 [L]
+  RewriteRule ^(css|js|img|upload|fonts)/(.*)$ /path/to/project/public/$1/$2 [L]
   RewriteRule ^ index.php [L]
 </IfModule>
