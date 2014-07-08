@@ -9,12 +9,10 @@ The basic bootstrap use a lot of packages to let you work on your project and st
 1. First of all you must clone the project repo: `git clone https://github.com/3yz/helles.git project_name`
 2. Go to the project folder and execute: `composer install` 
 3. Next, config the database in `app/config/database.php`
-4. Update the lines 557 and 558 of the .htaccess to your relative server path 
-5. Execute the following commands: 
-   - `./artisan migrate:install`
-   - `./artisan migrate --package=cartalyst/sentry`
-   - `./artisan asset:publish tresyz/helles-manager`
-   - `./artisan db:seed --class=ManagerTableSeeder`
+4. **This is an optional step, just use if you'll use Helles with apache**. Update the lines 557 and 558 of the .htaccess to your relative server path 
+5. Execute the following command: 
+   - `./artisan admin:install`
+This will install all the required resources do the system. You can use the option **--add-user** to send you straight to the add user CLI.
 
 ##Create a user
 In the terminal, run the following command:
