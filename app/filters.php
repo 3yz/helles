@@ -13,13 +13,13 @@
 
 App::before(function($request)
 {
-	//
+  setlocale(LC_ALL, Config::get('app.locale'));
 });
 
 
 App::after(function($request, $response)
 {
-	//
+
 });
 
 /*

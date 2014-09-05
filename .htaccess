@@ -559,5 +559,5 @@ FileETag None
   RewriteRule ^ index.php [L]
 </IfModule>
 
-# define the environment (local|testing|production)
+# define the environment (local|staging|production)
 SetEnv LARAVEL_ENV local 
