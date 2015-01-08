@@ -111,7 +111,8 @@ return array(
     'Krucas\Notification\NotificationServiceProvider',
     'Tresyz\HellesManager\HellesManagerServiceProvider',
     'Watson\Active\ActiveServiceProvider',
-    'Clockwork\Support\Laravel\ClockworkServiceProvider'
+    'Clockwork\Support\Laravel\ClockworkServiceProvider',
+    'Jenssegers\Agent\AgentServiceProvider',
 	),
 
 	/*
@@ -182,6 +183,7 @@ return array(
     'Model'           => 'Way\Database\Model',
     'Active'          => 'Watson\Active\Facades\Active',
     'Clockwork'       => 'Clockwork\Support\Laravel\Facade',
+    'Agent'           => 'Jenssegers\Agent\Facades\Agent',
 	),
 
 );
