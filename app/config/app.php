@@ -26,7 +26,7 @@ return array(
 	|
 	*/
 
-	'url' => 'http://localhost:8080/3yz/2014/helles/',
+	'url' => 'http://localhost:8000',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -108,7 +108,7 @@ return array(
 		'Illuminate\Workbench\WorkbenchServiceProvider',
     'Cartalyst\Sentry\SentryServiceProvider',
     'Way\Generators\GeneratorsServiceProvider',
-    'Krucas\Notification\NotificationServiceProvider',  
+    'Krucas\Notification\NotificationServiceProvider',
     'Tresyz\HellesManager\HellesManagerServiceProvider',
     'Watson\Active\ActiveServiceProvider',
     'Clockwork\Support\Laravel\ClockworkServiceProvider'

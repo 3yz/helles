@@ -10,10 +10,11 @@
     }
   ],
 	"require": {
-		"laravel/framework": "4.2.*",    
+		"laravel/framework": "4.2.*",
     "tresyz/helles-manager": "1.0.*",
     "watson/active": "1.*",
-    "itsgoingd/clockwork": "1.*"
+    "itsgoingd/clockwork": "1.*",
+    "jenssegers/agent": "*"
 	},
 	"autoload": {
 		"classmap": [
