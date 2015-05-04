@@ -34,7 +34,7 @@ Fill the values and in the group use the default, **admin**
 
 First of all, you need to run two commands in the terminal to begin the development:
 
-- `gulp` so the grunt can be run and compile all the things
+- `gulp` so the gulp can be run and compile all the things
 - `php artisan serve` to serve the project
 
 Note that the grunt command only will be necessary if you'll develop something in the frontend, once the backend already have a interface. 
