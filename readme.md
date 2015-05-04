@@ -12,7 +12,7 @@ Here is a list of all the tech stuff used to develop:
 - [SASS](http://getbootstrap.com/)
 - [Compass](http://compass-style.org/)
 - [jQuery](http://www.jquery.com)
-- [GruntJS](http://gruntjs.com/)
+- [GulpJS](http://gulpjs.com/)
 
 ##Install
 1. First of all you must clone the project repo: `git clone https://github.com/3yz/helles.git project_name`
@@ -34,7 +34,7 @@ Fill the values and in the group use the default, **admin**
 
 First of all, you need to run two commands in the terminal to begin the development:
 
-- `grunt` so the grunt can be run and compile all the things
+- `gulp` so the grunt can be run and compile all the things
 - `php artisan serve` to serve the project
 
 Note that the grunt command only will be necessary if you'll develop something in the frontend, once the backend already have a interface. 
