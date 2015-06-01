@@ -49,7 +49,11 @@ Log::useDailyFiles(storage_path().'/logs/'.$logFile);
 
 App::error(function(Exception $exception, $code)
 {
-	Log::error($exception);
+  if(get_class($exception) == 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException') {
+    Log::error('URL not found: '. Request::url());
+  } else {
+    Log::error($exception);
+  }
 });
 
 /*
