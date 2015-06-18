@@ -11,6 +11,7 @@
         <meta name="keywords" content="">
         <meta name="author" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="env" content="{{ App::environment() }}">
         <!-- facebook meta -->
         <meta property="og:title" content="" />
         <meta property="og:site_name" content=""/>
@@ -35,7 +36,7 @@
         <script src=""></script>
         {{ HTML::script('js/plugins.js') }}
         {{ HTML::script('js/main.js') }}
-        @if (App::environment('staging'))
+        @if (!App::environment('production'))
         {{ HTML::script('js/checklist.js') }}
         @endif
 
