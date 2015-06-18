@@ -30,15 +30,18 @@ $( document ).ready(function(){
   }
 
   //create div
-  var skyline = $('<div>').css({ 'background-color': '#fff6bf', 'font-family': 'sans-serif', 'border' : '2px solid #ffd324', 'padding' : '10px' });
-  var html = '<h1>Atenção, existem problemas a serem corrigidos antes da publicação!</h1>';
-  html+='<ul>';
-  $.each(errors, function(i, elem) {
-    html+='<li>' + elem.name + '</li>';
-  });
-  html+='</ul>';
+  console.log(errors.length);
+  if(errors.length > 0) {
+    var skyline = $('<div>').css({ 'background-color': '#fff6bf', 'font-family': 'sans-serif', 'border' : '2px solid #ffd324', 'padding' : '10px' });
+    var html = '<h1>Atenção, existem problemas a serem corrigidos antes da publicação!</h1>';
+    html+='<ul>';
+    $.each(errors, function(i, elem) {
+      html+='<li>' + elem.name + '</li>';
+    });
+    html+='</ul>';
 
-  skyline.html(html);
+    skyline.html(html);
 
-  $('body').prepend(skyline);
+    $('body').prepend(skyline);
+  }
 });
