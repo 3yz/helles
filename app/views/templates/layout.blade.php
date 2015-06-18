@@ -35,7 +35,7 @@
         <script src=""></script>
         {{ HTML::script('js/plugins.js') }}
         {{ HTML::script('js/main.js') }}
-        @if (!App::environment('production'))
+        @if (App::environment('staging'))
         {{ HTML::script('js/checklist.js') }}
         @endif
 
