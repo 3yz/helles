@@ -8,12 +8,20 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title></title>
         <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <!-- facebook meta -->
+        <meta property="og:title" content="" />
+        <meta property="og:site_name" content=""/>
+        <meta property="og:url" content="" />
+        <meta property="og:description" content="" />
+        <meta property="og:image" content="" />
+        <!-- facebook meta -->
 
         {{ HTML::style('css/main.css') }}
         {{ HTML::script('js/vendor/modernizr-2.6.2.min.js') }}
+        <link rel="shortcut icon" type="image/x-icon" href=""/>
     </head>
     <body id="{{ controller_name() . '-' . action_name() }}" data-controller="{{ controller_name() }}" data-action="{{ action_name() }}" data-root-url="{{ URL::to('/') }}">
         <!--[if lt IE 7]>
@@ -27,15 +35,20 @@
         <script src=""></script>
         {{ HTML::script('js/plugins.js') }}
         {{ HTML::script('js/main.js') }}
+        @if (!App::environment('production'))
+        {{ HTML::script('js/checklist.js') }}
+        @endif
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
+            //colocar aqui o ID do analytics
+            var tracking_code = 'UA-XXXXX-X';
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
             function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
             e=o.createElement(i);r=o.getElementsByTagName(i)[0];
             e.src='//www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
+            ga('create',tracking_code);ga('send','pageview');
         </script>
     </body>
 </html>
