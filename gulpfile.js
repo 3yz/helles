@@ -5,7 +5,14 @@ var gulp = require('gulp'),
     minifyCss = require('gulp-minify-css'),
     plumber = require('gulp-plumber'),
     autoprefixer = require('gulp-autoprefixer'),
-    watch = require('gulp-watch');
+    watch = require('gulp-watch'),
+    php = require('gulp-connect-php');
+
+gulp.task('serve', function() {
+    php.server({
+        base: './public'
+    });
+});
 
 gulp.task('imagemin', function () {
     return gulp.src('public/img/*')
@@ -29,7 +36,7 @@ gulp.task('minify-css', function() {
 });
 
 gulp.task('compass', function() {
-  gulp.src('./public/scss/*.scss')
+  gulp.src('./public/scss/**/*.scss')
     .pipe(plumber({
       errorHandler: function (error) {
         console.log(error.message);
@@ -53,7 +60,7 @@ gulp.task('compass', function() {
 
 gulp.task('watch', function() {
     livereload.listen();
-    gulp.watch('public/scss/*.scss', ['compass']);
+    gulp.watch('public/scss/**/*.scss', ['compass']);
 });
 
-gulp.task('default', ['watch','compass', 'imagemin']);
+gulp.task('default', ['watch','compass', 'imagemin','serve']);
