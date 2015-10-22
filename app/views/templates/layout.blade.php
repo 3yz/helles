@@ -8,9 +8,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title></title>
         <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
         {{ HTML::style('css/main.css') }}
         {{ HTML::script('js/vendor/modernizr-2.6.2.min.js') }}
@@ -28,7 +28,6 @@
         {{ HTML::script('js/plugins.js') }}
         {{ HTML::script('js/main.js') }}
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
             function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
