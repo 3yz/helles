@@ -11,6 +11,14 @@
         <meta name="keywords" content="">
         <meta name="author" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="env" content="{{ App::environment() }}">
+        <!-- facebook meta -->
+        <meta property="og:title" content="" />
+        <meta property="og:site_name" content=""/>
+        <meta property="og:url" content="" />
+        <meta property="og:description" content="" />
+        <meta property="og:image" content="" />
+        <!-- facebook meta -->
 
         {{ HTML::style('css/main.css') }}
         {{ HTML::script('js/vendor/modernizr-2.6.2.min.js') }}
@@ -27,14 +35,19 @@
         <script src=""></script>
         {{ HTML::script('js/plugins.js') }}
         {{ HTML::script('js/main.js') }}
+        @if (!App::environment('production'))
+        {{ HTML::script('js/checklist.js') }}
+        @endif
 
         <script>
+            //colocar aqui o ID do analytics
+            var tracking_code = 'UA-XXXXX-X';
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
             function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
             e=o.createElement(i);r=o.getElementsByTagName(i)[0];
             e.src='//www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
+            ga('create',tracking_code);ga('send','pageview');
         </script>
     </body>
 </html>
